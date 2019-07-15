@@ -4,10 +4,10 @@ import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 import scala.concurrent.duration._
 
-class GreetingSimulation extends Simulation {
-  
+class BasicSimulation extends Simulation {
+
   val httpProtocol = http
-    .baseUrl("http://a99e647209ff011e98988021b2294b8d-1313009118.us-west-2.elb.amazonaws.com")
+    .baseUrl("http://abe13b4f3a60b11e98988021b2294b8d-1833402536.us-west-2.elb.amazonaws.com")
   // http://a99e647209ff011e98988021b2294b8d-1313009118.us-west-2.elb.amazonaws.com/greeting?name=test
     .acceptHeader("application/json") // Here are the common headers
     .header("Content-Type", "application/json")
