@@ -20,6 +20,6 @@ class GreetingSimulation extends Simulation {
       .get("/greeting?name=test"))
     .pause(7) // Note that Gatling has recorder real time pauses
   
-  setUp(scn.inject(atOnceUsers(1)).protocols(httpProtocol))
+  setUp(scn.inject(atOnceUsers(10)).protocols(httpProtocol))
   
 }
