@@ -4,7 +4,7 @@ import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 import scala.concurrent.duration._
 
-class BasicSimulation extends Simulation {
+class GreetingSimulation extends Simulation {
 
   val httpProtocol = http
     .baseUrl("http://abe13b4f3a60b11e98988021b2294b8d-1833402536.us-west-2.elb.amazonaws.com")
